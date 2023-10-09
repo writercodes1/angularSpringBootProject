@@ -1,0 +1,60 @@
+ 
+      
+        <div class="card-body border p-0">
+            <p>
+                <a class="btn btn-primary p-2 w-100 h-100 d-flex align-items-center justify-content-between"
+                    data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
+                    aria-controls="collapseExample">
+                    <span class="fw-bold">UPI</span>
+                    <span class="">
+                        <span class="fab fa-cc-amex"></span>
+                        <span class="fab fa-cc-mastercard"></span>
+                        <span class="fab fa-cc-discover"></span>
+                    </span>
+                </a>
+            </p>
+            <div class="collapse show p-3 pt-0" id="collapseExample">
+                <div class="row"  *ngFor="let item of pay">
+                    <div class="col-lg-5 mb-lg-0 mb-3"  >
+                        <p class="h4 mb-0">Summary</p>
+                        <p class="mb-0"><span class="fw-bold"><h2>Yours total payment -</h2></span>
+                        </p>
+                        <p class="mb-0">
+                            <span class="fw-bold">Price:({{item.price}}) </span>
+                            <span class="c-green">Product:{{item.product_name}}</span>
+                            <span class="c-green">  </span>
+                        </p>
+                        <p class="mb-0">
+                            <label for="address"> Type Address here</label><br>
+                            <input type="text">
+                             
+                        </p>
+                    </div><hr>
+                    <div class="col-lg-7">
+                        <form action="" class="form" >
+                            <div class="row">
+                                <div class="col-12"><h3>use thid barcode for payment</h3><img src="/assets/images/pay.jpg" height="500" width="500"></div>
+                                <div class="col-12">
+                                    <div class="btn btn-primary w-100"><button type="submit" (click)="paymeny(item.product_id)">Sumbit</button></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+        <p>
+            <a class="btn btn-primary p-2 w-100 h-100 d-flex align-items-center justify-content-between"
+                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="true"
+                aria-controls="collapseExample">
+                 
+                <span class="">
+                    <span class="fab fa-cc-amex"></span>
+                    <span class="fab fa-cc-mastercard"></span>
+                    <span class="fab fa-cc-discover"></span>
+                </span>
+            </a>
+        </p>
+   
+ 
+        
