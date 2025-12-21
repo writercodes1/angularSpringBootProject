@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/internal/Observable';
   providedIn: 'root'
 })
 export class AdminService {
-  baseURL1 ="http://localhost:8081/admin";
+  baseURL1 ="http://radiant-patience-production-40e5.up.railway.app/admin";
   constructor(private httpclient:HttpClient) { }
  
   loginadmin(admin:Admin):Observable<Object>{

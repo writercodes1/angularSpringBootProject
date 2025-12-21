@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: 'http://localhost:8081/products'
-  };
+    apiUrl: 'http://radiant-patience-production-40e5.up.railway.app/products'
+  }

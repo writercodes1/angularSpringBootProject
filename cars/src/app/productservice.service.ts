@@ -7,11 +7,11 @@ import { Products } from './products';
   providedIn: 'root'
 })
 export class ProductserviceService {
-baseURL1="http://localhost:8081/products";
-baseURL2="http://localhost:8081/addproduct"; 
-baseURL3="http://localhost:8081/product";
-baseURL4="http://localhost:8081/addtocart";
-baseURL5="http://localhost:8081/addtopay";
+baseURL1="http://radiant-patience-production-40e5.up.railway.app/products";
+baseURL2="http://radiant-patience-production-40e5.up.railway.app/addproduct"; 
+baseURL3="http://radiant-patience-production-40e5.up.railway.app/product";
+baseURL4="http://radiant-patience-production-40e5.up.railway.app/addtocart";
+baseURL5="http://radiant-patience-production-40e5.up.railway.app/addtopay";
 id?:number;
   constructor(private httpClient:HttpClient) { }
 
