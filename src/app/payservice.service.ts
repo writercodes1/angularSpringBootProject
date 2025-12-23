@@ -7,8 +7,8 @@ import { Pay } from './pay';
   providedIn: 'root'
 })
 export class PayserviceService {
-  baseURL1="https://radiant-patience-production-40e5.up.railway.app/pay";
-  baseURL2="https://radiant-patience-production-40e5.up.railway.app/deletepay";
+  baseURL1="http://radiant-patience-production-40e5.up.railway.app/pay";
+  baseURL2="http://radiant-patience-production-40e5.up.railway.app/deletepay";
   constructor(private httpClient:HttpClient) { }
 
 

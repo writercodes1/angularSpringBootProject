@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UserService {
-baseURL1 ="https://radiant-patience-production-40e5.up.railway.app/addUser";
-baseURL2 ="https://radiant-patience-production-40e5.up.railway.app/userLogin";
+baseURL1 ="http://radiant-patience-production-40e5.up.railway.app/addUser";
+baseURL2 ="http://radiant-patience-production-40e5.up.railway.app/userLogin";
   constructor(private httpclient:HttpClient) { }
 
   loginuser(user:User):Observable<Object>{
