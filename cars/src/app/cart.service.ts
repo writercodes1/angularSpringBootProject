@@ -7,8 +7,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CartService  {
-  baseURL1="http://radiant-patience-production-40e5.up.railway.app/carts";
-  baseURL2="http://radiant-patience-production-40e5.up.railway.app/deletecarts";
+  baseURL1="https://radiant-patience-production-40e5.up.railway.app/carts";
+  baseURL2="https://radiant-patience-production-40e5.up.railway.app/deletecarts";
   constructor(private httpClient:HttpClient) { }
   
   getAllcart():Observable<Carts[]>{
