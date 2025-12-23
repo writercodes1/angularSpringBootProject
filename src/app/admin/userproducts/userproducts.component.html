@@ -1,0 +1,39 @@
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"> <img    src=" " width="auto" height="40" class="d-inline-block align-top" alt=""/>
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+                      <a class="nav-link" href="userproducts"  >Home</a>
+                  </li>
+                  
+                   <li>
+                      <a class="nav-link"  href="carts"  >carts</a>
+                  </li>
+                  
+  
+      </ul>
+      
+    </div>
+  </nav>
+   
+  
+   
+  
+  <div class="card wish-list mb-4"  *ngFor="let pro of products">
+    <img   src="{{pro.imageName}}"  alt=" Image" width="200" height="200"  >
+    <div class="card-body" >
+      <p class="card-text"   > {{pro.product_name}} </p>
+               
+      <p class="card-text"  > {{pro.price}} </p>
+       <p class="card-text"  >{{pro.description}}</p>
+       <p class="card-text">  <button type="submit" (click)="add(pro.product_id)"> Add to cart </button></p>
+       <p class="card-text">  <button type="submit" (click)="Payment(pro.product_id)">order product </button></p>
+    </div>
+  </div>
+  
+   
+              
