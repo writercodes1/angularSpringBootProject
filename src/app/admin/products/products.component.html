@@ -21,17 +21,20 @@
   </div>
 </nav>
 
+ 
 
-<div class="card wish-list mb-4 flex justify-start"  *ngFor="let pro of products">
-    <img   src="{{pro.imageName}}"  alt=" Image" width="200" height="200"  >
-    <div class="card-body" >
-      <p class="card-text"   > {{pro.product_name}} </p>
-               
-      <p class="card-text"  > {{pro.price}} </p>
-       <p class="card-text"  >{{pro.description}}</p>
-       
+  <div class="product-wrapper">
+    <div class="card wish-list mb-4" *ngFor="let pro of products">
+      <img src="{{pro.imageName}}" alt="Image" width="200" height="200">
+  
+      <div class="card-body">
+        <p class="card-text">{{ pro.product_name }}</p>
+        <p class="card-text">{{ pro.price }}</p>
+        <p class="card-text">{{ pro.description }}</p>
+      </div>
     </div>
   </div>
+  
 
 <!-- Hero Section -->
 <section class="hero bg-dark text-white text-center py-5">

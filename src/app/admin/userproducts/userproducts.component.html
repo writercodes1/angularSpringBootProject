@@ -22,7 +22,7 @@
    
   
    
-  
+  <div class="product-wrapper">
   <div class="card wish-list mb-4 flex justify-start"  *ngFor="let pro of products">
     <img   src="{{pro.imageName}}"  alt=" Image" width="200" height="200"  >
     <div class="card-body" >
@@ -34,6 +34,6 @@
        <p class="card-text">  <button type="submit" (click)="Payment(pro.product_id)">order product </button></p>
     </div>
   </div>
-  
+  </div>
    
               

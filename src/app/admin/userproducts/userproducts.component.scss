@@ -1,0 +1,19 @@
+.wish-list {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .wish-list:hover {
+    transform: scale(1.05);        /* thoda zoom */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  }
+  
+  .product-wrapper {
+    display: flex;
+    flex-wrap: wrap;          /* next line pe jane ke liye */
+    gap: 20px;                /* cards ke beech space */
+  }
+  
+  .wish-list {
+    width: 250px;             /* card width fix */
+  }
+  
