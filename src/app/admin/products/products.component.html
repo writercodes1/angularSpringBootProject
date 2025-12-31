@@ -35,8 +35,8 @@
  
 
   <div class="product-wrapper ">
-    <div class="card wish-list m-6 p-1" *ngFor="let pro of products">
-      <img src="{{pro.imageName}}"  class="card-img-top m-3" alt="Image" width="200" height="200">
+    <div class="card wish-list m-6 " *ngFor="let pro of products">
+      <img src="{{pro.imageName}}"  class="card-img-top m-3 p-2" alt="Image" width="200" height="200">
   
       <div class="card-body">
         <p class="card-text">{{ pro.product_name }}{{ pro.price }}</p>
