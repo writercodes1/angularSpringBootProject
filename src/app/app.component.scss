@@ -1,0 +1,33 @@
+.image-row {
+    display: flex;
+    gap: 20px;              /* images ke beech gap */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-row img {
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Netflix style hover zoom */
+  .image-row img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .image-row {
+      flex-direction: column;
+    }
+  
+    .image-row img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  

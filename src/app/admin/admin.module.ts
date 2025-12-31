@@ -16,6 +16,7 @@ import { UpdateComponent } from './update/update.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { UserregComponent } from './userreg/userreg.component';
 import { AddressComponent } from './address/address.component';
+import { SearchbarComponent } from './searchbar/searchbar.component';
 
 
 
@@ -34,7 +35,8 @@ import { AddressComponent } from './address/address.component';
     UserproductsComponent,
     UpdateComponent,
     UserregComponent,
-    AddressComponent
+    AddressComponent,
+    SearchbarComponent
   ],
   imports: [
     CommonModule,
